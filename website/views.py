@@ -12,3 +12,7 @@ def about_View(request):
 
 def contact_View(request):
     return render(request, 'website/contact.html')
+
+
+def blog_View(request):
+    return render(request, 'blog/blog-home.html')

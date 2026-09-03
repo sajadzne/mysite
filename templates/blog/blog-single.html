@@ -1,0 +1,751 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Start banner Area -->
+<section class="banner-area relative">
+	<div class="overlay overlay-bg"></div>
+
+	<div class="container">
+		<div class="row fullscreen align-items-center justify-content-between">
+			<div class="col-lg-12">
+				<div class="banner-content text-center">
+					<p class="text-white">Welcome to our blog</p>
+
+					<h1 class="text-white">Blog Single</h1>
+
+					<div class="bread-crumb">
+						<a href="{% url 'website:index' %}">Home</a>
+						<span class="lnr lnr-arrow-right"></span>
+						<a href="{% url 'blog:index' %}">Blog</a>
+						<span class="lnr lnr-arrow-right"></span>
+						<a href="{% url 'blog:single' %}">Blog Single</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+
+
+<!-- Start blog-posts Area -->
+<section class="blog-posts-area section-gap">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Main Blog Content -->
+			<div class="col-lg-8">
+
+				<div class="blog-post">
+
+					<img class="img-fluid" src="{% static 'img/blog/feature-img1.jpg' %}" alt="Blog Image">
+
+					<div class="blog-details">
+
+						<div class="blog-meta">
+							<a href="#">
+								<span class="lnr lnr-calendar-full"></span>
+								13th Dec
+							</a>
+
+							<a href="#">
+								<span class="lnr lnr-user"></span>
+								Admin
+							</a>
+
+							<a href="#">
+								<span class="lnr lnr-bubble"></span>
+								06 Comments
+							</a>
+						</div>
+
+						<h2>
+							Astronomy Binoculars A Great Alternative
+							<br>
+							To A Telescope
+						</h2>
+
+						<p>
+							MCSE boot camps have its supporters and its detractors.
+							Some people do not understand why you should have to spend
+							money on boot camp when you can get the MCSE study materials
+							yourself at a fraction of the camp price.
+						</p>
+
+						<p>
+							But in this world of changing technology, you have to stay
+							current on your certifications if you want to secure your
+							future. You may not be able to rely on old knowledge anymore.
+							Technology is changing every day, and new tools and
+							techniques are being introduced constantly.
+						</p>
+
+						<blockquote>
+							<p>
+								“The beauty of astronomy is that it allows us to explore
+								the universe and understand our place in it.”
+							</p>
+						</blockquote>
+
+						<p>
+							Astronomy is one of the oldest sciences known to humanity.
+							Looking at the night sky has always inspired people to ask
+							questions about the universe, the stars and the planets.
+							Modern technology has allowed us to explore these questions
+							in much greater detail.
+						</p>
+
+						<p>
+							If you are interested in learning more about astronomy,
+							there are many resources available. Binoculars can be a
+							great starting point because they are simple to use and
+							allow you to observe many objects in the night sky.
+						</p>
+
+					</div>
+				</div>
+
+
+				<!-- Post Navigation -->
+				<div class="navigation-area">
+
+					<div class="row">
+
+						<div class="col-lg-6 col-md-6 col-12 nav-left">
+							<a href="#">
+								<span class="lnr lnr-arrow-left"></span>
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/prev.jpg' %}" alt="Previous Post">
+								</div>
+
+								<div class="detials">
+									<p>Previous Post</p>
+									<h4>Space The Final Frontier</h4>
+								</div>
+							</a>
+						</div>
+
+
+						<div class="col-lg-6 col-md-6 col-12 nav-right">
+							<a href="#">
+								<div class="detials">
+									<p>Next Post</p>
+									<h4>Telescopes And Astronomy</h4>
+								</div>
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/next.jpg' %}" alt="Next Post">
+								</div>
+
+								<span class="lnr lnr-arrow-right"></span>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- End Post Navigation -->
+
+
+				<!-- Comments Area -->
+				<div class="comments-area">
+
+					<h4>05 Comments</h4>
+
+					<div class="comment-list">
+
+						<div class="single-comment justify-content-between d-flex">
+
+							<div class="user justify-content-between d-flex">
+
+								<div class="thumb">
+									<img src="{% static 'img/blog/c1.jpg' %}" alt="Comment User">
+								</div>
+
+								<div class="desc">
+
+									<h5>
+										<a href="#">Emilly Blunt</a>
+									</h5>
+
+									<p class="date">
+										December 4, 2017 at 3:12 pm
+									</p>
+
+									<p class="comment">
+										Never say goodbye till the end comes!
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="reply-btn">
+								<a href="#" class="btn-reply text-uppercase">
+									reply
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="comment-list">
+
+						<div class="single-comment justify-content-between d-flex">
+
+							<div class="user justify-content-between d-flex">
+
+								<div class="thumb">
+									<img src="{% static 'img/blog/c2.jpg' %}" alt="Comment User">
+								</div>
+
+								<div class="desc">
+
+									<h5>
+										<a href="#">Elsie Cunningham</a>
+									</h5>
+
+									<p class="date">
+										December 4, 2017 at 3:12 pm
+									</p>
+
+									<p class="comment">
+										Great article. I really enjoyed reading this
+										post and learning more about astronomy.
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="reply-btn">
+								<a href="#" class="btn-reply text-uppercase">
+									reply
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="comment-list">
+
+						<div class="single-comment justify-content-between d-flex">
+
+							<div class="user justify-content-between d-flex">
+
+								<div class="thumb">
+									<img src="{% static 'img/blog/c3.jpg' %}" alt="Comment User">
+								</div>
+
+								<div class="desc">
+
+									<h5>
+										<a href="#">Maria Luna</a>
+									</h5>
+
+									<p class="date">
+										December 4, 2017 at 3:12 pm
+									</p>
+
+									<p class="comment">
+										This is a very interesting topic. Thanks for
+										sharing this information.
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="reply-btn">
+								<a href="#" class="btn-reply text-uppercase">
+									reply
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="comment-list">
+
+						<div class="single-comment justify-content-between d-flex">
+
+							<div class="user justify-content-between d-flex">
+
+								<div class="thumb">
+									<img src="{% static 'img/blog/c4.jpg' %}" alt="Comment User">
+								</div>
+
+								<div class="desc">
+
+									<h5>
+										<a href="#">John Doe</a>
+									</h5>
+
+									<p class="date">
+										December 4, 2017 at 3:12 pm
+									</p>
+
+									<p class="comment">
+										I learned something new from this post.
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="reply-btn">
+								<a href="#" class="btn-reply text-uppercase">
+									reply
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="comment-list">
+
+						<div class="single-comment justify-content-between d-flex">
+
+							<div class="user justify-content-between d-flex">
+
+								<div class="thumb">
+									<img src="{% static 'img/blog/c5.jpg' %}" alt="Comment User">
+								</div>
+
+								<div class="desc">
+
+									<h5>
+										<a href="#">Sarah Smith</a>
+									</h5>
+
+									<p class="date">
+										December 4, 2017 at 3:12 pm
+									</p>
+
+									<p class="comment">
+										Thanks for sharing this useful article.
+									</p>
+
+								</div>
+
+							</div>
+
+							<div class="reply-btn">
+								<a href="#" class="btn-reply text-uppercase">
+									reply
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- End Comments Area -->
+
+
+				<!-- Comment Form -->
+				<div class="comment-form">
+
+					<h4>Leave a Comment</h4>
+
+					<form>
+
+						<div class="form-group">
+
+							<div class="row">
+
+								<div class="col-lg-6">
+									<input type="text" name="name" placeholder="Enter your name"
+										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+										class="common-input mb-20 form-control">
+								</div>
+
+								<div class="col-lg-6">
+									<input type="email" name="email" placeholder="Enter email address"
+										onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter email address'"
+										class="common-input mb-20 form-control">
+								</div>
+
+								<div class="col-lg-12">
+									<input type="text" name="subject" placeholder="Enter Subject"
+										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+										class="common-input mb-20 form-control">
+								</div>
+
+								<div class="col-lg-12">
+
+									<textarea class="form-control mb-10" name="message" placeholder="Messege"
+										onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Messege'"></textarea>
+
+									<button type="submit" class="primary-btn text-uppercase">
+										Post Comment
+									</button>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+				<!-- End Comment Form -->
+
+			</div>
+			<!-- End Main Blog Content -->
+
+
+			<!-- Sidebar -->
+			<div class="col-lg-4 sidebar-widgets">
+
+				<div class="widget-wrap">
+
+
+					<!-- Search Widget -->
+					<div class="single-sidebar-widget search-widget">
+
+						<form action="#" method="get">
+
+							<input type="text" name="search" placeholder="Search Posts" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Search Posts'">
+
+							<button type="submit">
+								<span class="lnr lnr-magnifier"></span>
+							</button>
+
+						</form>
+
+					</div>
+					<!-- End Search Widget -->
+
+
+					<!-- Author Widget -->
+					<div class="single-sidebar-widget user-info-widget">
+
+						<img src="{% static 'img/blog/user-info.png' %}" alt="User">
+
+						<a href="#">
+							<h4>Charlie Barber</h4>
+						</a>
+
+						<p>
+							Senior blog writer
+						</p>
+
+						<div class="social-links">
+
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+
+							<a href="#">
+								<i class="fa fa-github"></i>
+							</a>
+
+							<a href="#">
+								<i class="fa fa-behance"></i>
+							</a>
+
+						</div>
+
+						<p>
+							Boot camps have its supporters and its detractors.
+							Some people do not understand why you should have to
+							spend money on boot camp when you can get the study
+							materials yourself.
+						</p>
+
+					</div>
+					<!-- End Author Widget -->
+
+
+					<!-- Popular Posts -->
+					<div class="single-sidebar-widget popular-post-widget">
+
+						<h4 class="popular-title">Popular Posts</h4>
+
+						<div class="popular-post-list">
+
+
+							<div class="single-post-list d-flex flex-row align-items-center">
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/pp1.jpg' %}" alt="Popular Post">
+								</div>
+
+								<div class="details">
+									<a href="#">
+										<h6>Space The Final Frontier</h6>
+									</a>
+
+									<p>02 Hours ago</p>
+								</div>
+
+							</div>
+
+
+							<div class="single-post-list d-flex flex-row align-items-center">
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/pp2.jpg' %}" alt="Popular Post">
+								</div>
+
+								<div class="details">
+									<a href="#">
+										<h6>The Amazing Universe</h6>
+									</a>
+
+									<p>02 Hours ago</p>
+								</div>
+
+							</div>
+
+
+							<div class="single-post-list d-flex flex-row align-items-center">
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/pp3.jpg' %}" alt="Popular Post">
+								</div>
+
+								<div class="details">
+									<a href="#">
+										<h6>Astronomy And Science</h6>
+									</a>
+
+									<p>03 Hours ago</p>
+								</div>
+
+							</div>
+
+
+							<div class="single-post-list d-flex flex-row align-items-center">
+
+								<div class="thumb">
+									<img class="img-fluid" src="{% static 'img/blog/pp4.jpg' %}" alt="Popular Post">
+								</div>
+
+								<div class="details">
+									<a href="#">
+										<h6>Discover The Stars</h6>
+									</a>
+
+									<p>04 Hours ago</p>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!-- End Popular Posts -->
+
+
+					<!-- Ads Widget -->
+					<div class="single-sidebar-widget ads-widget">
+
+						<a href="#">
+							<img class="img-fluid" src="{% static 'img/blog/ads-banner.jpg' %}" alt="Advertisement">
+						</a>
+
+					</div>
+					<!-- End Ads Widget -->
+
+
+					<!-- Categories Widget -->
+					<div class="single-sidebar-widget post-category-widget">
+
+						<h4 class="category-title">
+							Post Catgories
+						</h4>
+
+						<ul class="cat-list">
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Technology</p>
+									<p>37</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Lifestyle</p>
+									<p>24</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Fashion</p>
+									<p>59</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Art</p>
+									<p>29</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Food</p>
+									<p>15</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Architecture</p>
+									<p>09</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="d-flex justify-content-between">
+									<p>Adventure</p>
+									<p>44</p>
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+					<!-- End Categories Widget -->
+
+
+					<!-- Newsletter Widget -->
+					<div class="single-sidebar-widget newsletter-widget">
+
+						<h4 class="newsletter-title">
+							Newsletter
+						</h4>
+
+						<p>
+							Here, I focus on a range of items and features that we use
+							in life without giving them a second thought.
+						</p>
+
+						<div id="mc_embed_signup">
+
+							<form action="#" method="post" class="form-inline">
+
+								<div class="form-group row">
+
+									<div class="col-lg-8 col-md-8 col-sm-8">
+
+										<input type="email" name="email" placeholder="Enter email"
+											onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'"
+											required class="form-control">
+
+									</div>
+
+									<div class="col-lg-4 col-md-4 col-sm-4">
+
+										<button class="nw-btn primary-btn" type="submit">
+											Subscribe
+										</button>
+
+									</div>
+
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+					<!-- End Newsletter Widget -->
+
+
+					<!-- Tag Cloud Widget -->
+					<div class="single-sidebar-widget tag-cloud-widget">
+
+						<h4 class="tagcloud-title">
+							Tag Clouds
+						</h4>
+
+						<ul>
+
+							<li>
+								<a href="#">Technology</a>
+							</li>
+
+							<li>
+								<a href="#">Fashion</a>
+							</li>
+
+							<li>
+								<a href="#">Architecture</a>
+							</li>
+
+							<li>
+								<a href="#">Fashion</a>
+							</li>
+
+							<li>
+								<a href="#">Food</a>
+							</li>
+
+							<li>
+								<a href="#">Technology</a>
+							</li>
+
+							<li>
+								<a href="#">Lifestyle</a>
+							</li>
+
+							<li>
+								<a href="#">Art</a>
+							</li>
+
+							<li>
+								<a href="#">Adventure</a>
+							</li>
+
+							<li>
+								<a href="#">Food</a>
+							</li>
+
+							<li>
+								<a href="#">Lifestyle</a>
+							</li>
+
+						</ul>
+
+					</div>
+					<!-- End Tag Cloud Widget -->
+
+				</div>
+
+			</div>
+			<!-- End Sidebar -->
+
+		</div>
+
+	</div>
+</section>
+<!-- End blog-posts Area -->
+
+{% endblock %}
