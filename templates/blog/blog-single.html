@@ -13,19 +13,20 @@
 				<div class="banner-content text-center">
 					<p class="text-white">Welcome to our blog</p>
 
-					<h1 class="text-white">Blog Single</h1>
+					<h1 class="text-white">{{post.title}}</h1>
 
 					<div class="bread-crumb">
 						<a href="{% url 'website:index' %}">Home</a>
 						<span class="lnr lnr-arrow-right"></span>
+
 						<a href="{% url 'blog:index' %}">Blog</a>
 						<span class="lnr lnr-arrow-right"></span>
-						<a href="{% url 'blog:single' %}">Blog Single</a>
+
+						<span>Blog Single</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </section>
 <!-- End banner Area -->
 
@@ -48,7 +49,7 @@
 						<div class="blog-meta">
 							<a href="#">
 								<span class="lnr lnr-calendar-full"></span>
-								13th Dec
+								{{ post.published_date }}
 							</a>
 
 							<a href="#">
@@ -63,46 +64,11 @@
 						</div>
 
 						<h2>
-							Astronomy Binoculars A Great Alternative
-							<br>
-							To A Telescope
+							{{ post.title }}
 						</h2>
 
 						<p>
-							MCSE boot camps have its supporters and its detractors.
-							Some people do not understand why you should have to spend
-							money on boot camp when you can get the MCSE study materials
-							yourself at a fraction of the camp price.
-						</p>
-
-						<p>
-							But in this world of changing technology, you have to stay
-							current on your certifications if you want to secure your
-							future. You may not be able to rely on old knowledge anymore.
-							Technology is changing every day, and new tools and
-							techniques are being introduced constantly.
-						</p>
-
-						<blockquote>
-							<p>
-								“The beauty of astronomy is that it allows us to explore
-								the universe and understand our place in it.”
-							</p>
-						</blockquote>
-
-						<p>
-							Astronomy is one of the oldest sciences known to humanity.
-							Looking at the night sky has always inspired people to ask
-							questions about the universe, the stars and the planets.
-							Modern technology has allowed us to explore these questions
-							in much greater detail.
-						</p>
-
-						<p>
-							If you are interested in learning more about astronomy,
-							there are many resources available. Binoculars can be a
-							great starting point because they are simple to use and
-							allow you to observe many objects in the night sky.
+							{{post.content}}
 						</p>
 
 					</div>
