@@ -15,7 +15,7 @@ def function():
 def sinppet(value, arg = 20):
     return value[:arg] + "..."
     
-@register.inclusion_tag("popularposts.html")
-def popularposts(): 
-    posts = Post.objects.filter(status=1).order_by("published_date")[:1]
+@register.inclusion_tag("blog/blog-popular-posts.html")
+def popularposts(arg=3): 
+    posts = Post.objects.filter(status=1).order_by("published_date")[:arg]
     return {"posts":posts}
