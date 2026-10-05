@@ -10,10 +10,8 @@
 
 <body>
     <h1>Testing Page</h1>
-    <p>test:  {% posts as totalposts %} </p>
-    {% for post in totalposts %}
-        <p>{{post.content|sinppet}}</p>
-    {% endfor %}
+    <p>test: </p>
+    {% popularposts %}
 </body>
 
 </html>
